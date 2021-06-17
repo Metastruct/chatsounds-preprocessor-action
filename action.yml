@@ -1,0 +1,8 @@
+name: 'chatsounds-preprocessor-action'
+description: 'Run the chatsounds-preprocessor docker for CI.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '--full'
+    - '--non-interactive'
